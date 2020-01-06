@@ -7,7 +7,7 @@ We further develop a unified segmentation strategy to train the three separate d
 For more details, please refer to our [paper] (https://arxiv.org/pdf/2001.00208.pdf).
 
 ### Instrction
-- set up your environment by anaconda, (**python3.7, torch 1.3.0)
+- set up your environment by anaconda, (**python3.7, torch 1.3.0**)
 - conda install -c simpleitk simpleitk
 - conda install -c conda-forge nibabel
 - pip install torchvision=0.4
@@ -25,6 +25,7 @@ CUDA_VISIBLE_DEVICES=0 python segment_sf.py --view 'axial' --slices 3 $img_dir $
 ```
 
 ## Multi-organ segmentation over multiple datasets
+In this section the network can be trained over multiple datasets.
 
 ## Citation
 ```
