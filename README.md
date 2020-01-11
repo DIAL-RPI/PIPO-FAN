@@ -6,7 +6,7 @@ The 2D network shows very competitive performance compared with other 3D network
 We further develop a unified segmentation strategy to train the three separate datasets together and do multi-organ segmentation with these partial datasets. It gives the segmentation network more robustness and accuracy. We'll test the method further in future work.
 For more details, please refer to our [paper](https://arxiv.org/pdf/2001.00208.pdf).
 
-## Instrction
+## Instruction
 - set up your environment by anaconda, (**python3.7, torch 1.3.0**)
 - conda install -c simpleitk simpleitk
 - conda install -c conda-forge nibabel
