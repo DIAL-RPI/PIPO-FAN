@@ -1,4 +1,4 @@
-# The official code of "Multi-organ Segmentation over Partially Labeled Datasets with Multi-scale Feature Abstraction"
+# Multi-organ Segmentation over Partially Labeled Datasets with Multi-scale Feature Abstraction
 
 ## Introduction
 In this paper, we propose a novel network architecture for unified multi-scale feature abstraction, which incorporates multi-scale features in a hierarchical fashion at various depths for image segmentation. 
@@ -12,8 +12,13 @@ For more details, please refer to our [paper](https://arxiv.org/pdf/2001.00208.p
 - conda install -c conda-forge nibabel
 - pip install torchvision=0.4
 
+## Preprocessing
+Use resample.py to resample the size of each slice into 256*256. Use command line:
+```
+resample -p1 '/home/fangx2/data/preCT/' -p2 '/home/fangx2/data/prect_256/' -s1 256 -s2 256
+```
 ## Pyramid Input Pyramid Output Feature Abstraction Network (PIPO-FAN)
-To train PIPO-FAN on single dataset, modify the folder_training, folder_validation, checking_dir and log_dir path according to your local environment.
+To train PIPO-FAN on single dataset, modify the folder_training, folder_validation, checking_dir and log_dir path according to your local environment. To train the PIPO, use train_concave0.py. To train the PIPO-FAN, use train_sf_partial.
 
 ### Training
 ```
@@ -28,7 +33,7 @@ CUDA_VISIBLE_DEVICES=0 python segment_sf.py --view 'axial' --slices 3 $img_dir $
 ```
 
 ## Multi-organ segmentation over multiple datasets
-In this section the network can be trained over multiple datasets. Similar to last section, but the combination of multiple datasets are used for training.
+In this section the network can be trained over multiple datasets. Similar to last section, but the combination of multiple datasets are used for training. BTCV, LiTS, KiTS and spleen datasets are used in our experiments.
 
 ## Citation
 ```
