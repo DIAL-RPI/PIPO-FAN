@@ -40,7 +40,11 @@ In this section the network can be trained over multiple datasets. Similar to la
 @article{fang2020multi,
   title={Multi-organ Segmentation over Partially Labeled Datasets with Multi-scale Feature Abstraction},
   author={Fang, Xi and Yan, Pingkun},
-  journal={arXiv preprint arXiv:2001.00208},
-  year={2020}
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  volume={},
+  number={},
+  pages={1-1},
 }
 ```
+Pre-print version is available at [arXiv](https://arxiv.org/abs/2001.00208)
