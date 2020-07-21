@@ -72,7 +72,10 @@ class down(nn.Module):
 
     def forward(self, x, y):
         x = self.pool(x)
+        # Concatenation
         x_1 = torch.cat((x,y),1)
+        # Summation
+        # x_1 = x + y
         x_2 = self.mpconv(x_1)
         if x_1.shape == x_2.shape:
             x = x_1 + x_2
