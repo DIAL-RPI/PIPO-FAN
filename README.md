@@ -42,9 +42,9 @@ In this section the network can be trained over multiple datasets. Similar to la
   author={Fang, Xi and Yan, Pingkun},
   journal={IEEE Transactions on Medical Imaging},
   year={2020},
-  volume={},
-  number={},
-  pages={1-1},
+  volume={39},
+  number={11},
+  pages={3616-3629},
 }
 ```
 Pre-print version is available at [arXiv](https://arxiv.org/abs/2001.00208)
